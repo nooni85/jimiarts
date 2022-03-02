@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.19
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend\Frontend.csproj", "{2F6F2DEF-4E85-40C8-8BC6-AA10747459EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "src\Frontend\Frontend.csproj", "{2F6F2DEF-4E85-40C8-8BC6-AA10747459EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontendTest", "FrontendTest\FrontendTest.csproj", "{43A25BBC-13CB-4F14-8BAA-E3A6AEB6D3AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontendTest", "test\FrontendTest\FrontendTest.csproj", "{43A25BBC-13CB-4F14-8BAA-E3A6AEB6D3AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11D81C23-CB08-480B-9428-D0FDCBAB7055}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{F0D9311A-00E4-4ED8-8365-530747736983}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "src\Models\Models.csproj", "{F0D9311A-00E4-4ED8-8365-530747736983}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F9005BEA-2026-4A7F-BFE2-1C7D26F90804}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9EE20764-2EBF-41BC-A7C0-66310650F3AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,5 +42,10 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EC7A2F0-49F8-4959-A64D-A9446A7DF709}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F6F2DEF-4E85-40C8-8BC6-AA10747459EA} = {F9005BEA-2026-4A7F-BFE2-1C7D26F90804}
+		{F0D9311A-00E4-4ED8-8365-530747736983} = {F9005BEA-2026-4A7F-BFE2-1C7D26F90804}
+		{43A25BBC-13CB-4F14-8BAA-E3A6AEB6D3AF} = {9EE20764-2EBF-41BC-A7C0-66310650F3AE}
 	EndGlobalSection
 EndGlobal
